@@ -2,46 +2,48 @@
   <div class="pa-10 grey">
     <v-card width="1400" class="mx-auto">
       <v-row>
-        <v-col cols="4">
+        <v-col cols="12" xs="12" sm="12" md="4"  >
           <v-col class="pa-5 d-flex justify-center" cols="12">
             <v-avatar class="profile" color="grey" size="164">
               <v-img src="../assets/img/proflie.jpg"></v-img>
             </v-avatar>
           </v-col>
           <p class="text-center">Apiwanchai Yingtavorn</p>
-          <v-col cols="12" class="px-10">
+          <p class="text-center">Nickname: Nex </p>
+          <p class="text-center mb-0"> Age: 24</p>
+          <v-col cols="12" class="px-10 px-md-5" >
             <p class="primary--text">Skills</p>
             <v-divider></v-divider>
-            <v-row class="mt-2 mb-5">
-              <v-col cols="6">
+            <v-row class="mt-2 ">
+              <v-col cols="12" md="6" sm="6" xs="12">
                 <v-icon color="yellow"> mdi-language-javascript </v-icon>
                 Javascript
               </v-col>
-              <v-col cols="6">
+              <v-col cols="12" md="6" sm="6" xs="12">
                 <v-icon color="success"> mdi-vuejs </v-icon>
                 Vuejs
               </v-col>
-              <v-col cols="6">
+              <v-col cols="12" md="6" sm="6" xs="12">
                 <v-icon color="primary"> mdi-vuetify </v-icon>
                 vuetify
               </v-col>
-              <v-col cols="6">
+              <v-col cols="12" md="6" sm="6" xs="12">
                 <v-icon color="orange"> mdi-language-html5 </v-icon>
                 HTML
               </v-col>
-              <v-col cols="6">
+              <v-col cols="12" md="6" sm="6" xs="12">
                 <v-icon color="primary"> mdi-language-css3 </v-icon>
                 CSS
               </v-col>
             </v-row>
           </v-col>
-          <v-col cols="12" class="px-10">
+          <v-col cols="12" class="px-10 px-md-5">
             <p class="primary--text">Language</p>
             <v-divider></v-divider>
             <p class="mt-3">Thai (Native)</p>
             <p class="mt-2">English (basic)</p>
           </v-col>
-          <v-col cols="12 " class="px-10">
+          <v-col cols="12 " class="px-10 px-md-5">
             <p class="primary--text">Contact</p>
             <v-divider></v-divider>
             <v-row class="mt-2">
@@ -68,9 +70,9 @@
             </v-row>
           </v-col>
         </v-col>
-        <v-divider vertical></v-divider>
-        <v-col cols="7" class="">
-          <p class="primary--text text-h5">EXPERIENCE</p>
+        <v-divider vertical  v-show="!$vuetify.breakpoint.smAndDown"></v-divider>
+        <v-col cols="12" class=" px-sm-10 px-10  "  sm="12" md="7" xs="12" >
+          <p class="primary--text text-h5 ">EXPERIENCE</p>
           <v-divider></v-divider>
           <p class="px-5 mt-5">FULLSTACK DEVELOPER</p>
           <p class="px-5 grey--text">
@@ -96,10 +98,10 @@
           <p class="primary--text text-h5">Hobby</p>
           <v-divider></v-divider>
           <p class="px-5 mt-5">
-            <v-icon class="mr-2">mdi-soccer</v-icon> Play Football
+            <v-icon class="mr-2">mdi-soccer</v-icon> Football
           </p>
           <p class="px-5">
-            <v-icon class="mr-2">mdi-controller</v-icon> Play Game
+            <v-icon class="mr-2">mdi-controller</v-icon> Video Game
           </p>
           <p class="px-5"><v-icon class="mr-2">mdi-laptop</v-icon> Coding</p>
         </v-col>
